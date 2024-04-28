@@ -18,11 +18,29 @@ void reverseStr(string& str)
  
 }
  
-// Driver program
 int main()
 {
     string str = "strongboys";
     reverseStr(str);
     cout << str;
     return 0;
+}
+//another method using last to first approach
+// Approach 'for' Loop
+#include <bits/stdc++.h>
+using namespace std;
+ 
+// Function to reverse a string
+void reverse(string str)
+{
+    for (int i = str.length() - 1; i >= 0; i--)
+        cout << str[i];
+}
+ 
+
+int main(void)
+{
+    string s = "amityuniversity";
+    reverse(s);
+    return (0);
 }
